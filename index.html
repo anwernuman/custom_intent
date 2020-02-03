@@ -33,7 +33,7 @@ button {
  document.querySelector('#trigger-payment').addEventListener('click', (e) => {
 
      rzp.checkPaymentAdapter('gpay').then(() => {
-           alert('GPay Available');
+          // alert('GPay Available');
            rzp.createPayment(paymentData, {gpay: true})
      }).catch(() => {
           alert('GPay Unavailable');
