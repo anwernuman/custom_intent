@@ -37,7 +37,7 @@ button {
            rzp.createPayment(paymentData, {gpay: true})
      }).catch(() => {
           alert('GPay Unavailable');
-          paymentData.vpa = 'h22tswift@okhdfcbank';
+       //   paymentData.vpa = 'h22tswift@okhdfcbank';
           rzp.createPayment(paymentData);
 })
   e.preventDefault(); 
